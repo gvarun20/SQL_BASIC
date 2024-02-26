@@ -1,0 +1,18 @@
+CREATE TABLE (TYPE TABLE NAME) (
+    column1 datatype1,
+    column2 datatype2,
+    column3 datatype3,
+    -- Additional columns and data types as needed
+);
+
+
+##USE DATA TYPES AS VARCHAR , INT , CHAR , DATE , TIME , BOOLEAN
+
+
+## EXAMPLE 1)CREATE TABLE example_table ( column1 VARCHAR(50),
+    					  column2 VARCHAR(50) );
+
+	   2)CREATE TABLE example_table ( column1 INT,
+				          column2 INT(10) );
+
+
