@@ -1,0 +1,13 @@
+METHOD 1 :
+
+INSERT INTO ("TYPE YOUR TABLE NAME ") (column1, column2, column3) VALUES (value1, value2, value3);
+
+EXAMPLE :INSERT INTO employees (employee_id, first_name, last_name, birth_date, hire_date) VALUES (1, 'John', 'Doe', '1990-01-15', '2020-05-20');
+
+
+
+METHOD 2: 
+
+INSERT INTO ("TYPE YOUR TABLE NAME ") VALUES (value1, value2, value3);
+
+EXAMPLE : INSERT INTO employees VALUES (1, 'Jane', 'Smith', '1992-03-18', '2019-11-10');
