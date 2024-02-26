@@ -1,0 +1,11 @@
+ALTER TABLE ("TYPE TABLE NAME") ADD COLUMN ("TYPE new_column_name") datatype;
+
+EXAMPLE :  ALTER TABLE employees ADD COLUMN salary INT;
+
+
+
+ALTER TABLE ("TYPE TABLE NAME") MODIFY COLUMN ("existing_column_name") new_datatype;
+
+
+ALTER TABLE ("TYPE TABLE NAME") MODIFY COLUMN ("existing_column_name") datatype NOT NULL;
+
