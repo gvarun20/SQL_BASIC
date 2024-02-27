@@ -1,0 +1,13 @@
+STEP 1:  CREATE TABLE ("table_name") (id INT NOT NULL,
+    				      name VARCHAR(50) NULL,
+    				      age INT);
+
+
+
+STEP 2 :SELECT column1, column2, FROM ("table_name")
+	WHERE column_name IS NULL;
+
+
+STEP 3: SELECT * FROM ("table_name") WHERE name IS NULL;
+
+
