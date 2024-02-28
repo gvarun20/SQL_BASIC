@@ -1,0 +1,31 @@
+-- Sample Employees Table
+CREATE TABLE employees (employee_id INT PRIMARY KEY,
+    			employee_name VARCHAR(255),
+    			department_id INT );
+
+INSERT INTO employees (employee_id, employee_name, department_id)
+VALUES (1, 'Alice', 101),(2, 'Bob', 102),(3, 'Charlie', 101),(4, 'David', 103);
+
+-- Sample Departments Table
+CREATE TABLE departments (department_id INT PRIMARY KEY,
+    			  department_name VARCHAR(255) );
+
+INSERT INTO departments (department_id, department_name)
+VALUES (101, 'HR'),(102, 'IT'),(103, 'Finance');
+
+--------------------------------------------------------------------------------
+INNER JOIN QUERY 
+
+SELECT employees.employee_id, employees.employee_name, departments.department_name
+
+FROM employees
+
+INNER JOIN departments ON employees.department_id = departments.department_id;
+
+---------------------------------------------------------------------------------------
+
+EXPLANATION
+
+INNER JOIN departments ON employees.department_id = departments.department_id:
+ This part of the query performs an INNER JOIN operation between the "employees" and "departments" tables. 
+The condition for the join is that the "department_id" column in the "employees" table must match the "department_id" column in the "departments" table.
