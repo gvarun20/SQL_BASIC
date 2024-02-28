@@ -1,0 +1,11 @@
+SELECT employees.employee_id, employees.employee_name, departments.department_name
+
+FROM employees
+
+FULL JOIN departments ON employees.department_id = departments.department_id;
+-------------------------------------------------------------------------------
+
+EXPLANATION
+
+A FULL JOIN returns all rows when there is a match in either the "employees" or "departments" table.
+ If there is no match in one of the tables, the result will still include a row, but with NULL values for columns from the table with no match.
