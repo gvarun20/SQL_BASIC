@@ -1,0 +1,47 @@
+-----------------------------------------------------------------------------------------------------
+1)COUNT FUNCTION
+
+	SELECT COUNT(*) AS total_employees
+	FROM employees;
+-----------------------------------------------------------------------------------------------------
+2)SUM FUNCTION
+
+	SELECT SUM(salary) AS total_salary
+	FROM employees;
+
+-----------------------------------------------------------------------------------------------------
+3)AVERAGE FUNCTION
+
+	SELECT AVG(salary) AS average_salary
+	FROM employees;
+
+------------------------------------------------------------------------------------------------------
+4)MINIMUM FUNCTION
+
+	SELECT MIN(salary) AS min_salary
+	FROM employees;
+
+------------------------------------------------------------------------------------------------------
+5)MAXIMUM FUNCTION
+
+	SELECT MAX(salary) AS max_salary
+	FROM employees;
+	
+------------------------------------------------------------------------------------------------------
+6)GROUP BY FUNCTION
+	
+	SELECT department_id, AVG(salary) AS average_salary
+	FROM employees
+	GROUP BY department_id;
+
+------------------------------------------------------------------------------------------------------
+7)HAVING FUNCTION
+	
+	SELECT department_id, AVG(salary) AS average_salary
+	FROM employees
+	GROUP BY department_id
+	HAVING AVG(salary) > 50000;
+
+------------------------------------------------------------------------------------------------------
+
+
